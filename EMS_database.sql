@@ -1,0 +1,10 @@
+CREATE DATABASE `PSGeventmanage`;
+CREATE TABLE `PSGeventmanage`.`events`( id SMALLINT(1) UNSIGNED NOT NULL AUTO_INCREMENT, name VARCHAR(45) NOT NULL, datetime DATETIME NOT NULL, venue VARCHAR(45) NOT NULL, grades BIGINT(1) UNSIGNED NOT NULL, points1 TINYINT(1) UNSIGNED NOT NULL, points2 TINYINT(1) UNSIGNED NOT NULL, points3 TINYINT(1) UNSIGNED NOT NULL, points4 TINYINT(1) UNSIGNED NOT NULL, win1 TINYINT(1) UNSIGNED, win2 TINYINT(1) UNSIGNED, win3 TINYINT(1) UNSIGNED, win4 TINYINT(1) UNSIGNED, description TEXT, PRIMARY KEY (id));
+CREATE TABLE `PSGeventmanage`.`house`( id TINYINT(1) UNSIGNED NOT NULL AUTO_INCREMENT, name VARCHAR(20) NOT NULL, points SMALLINT(1) DEFAULT 0, color VARCHAR(7) NOT NULL, PRIMARY KEY(id));
+CREATE TABLE `PSGeventmanage`.`individual`( id SMALLINT(1) UNSIGNED NOT NULL AUTO_INCREMENT, name VARCHAR(45) NOT NULL, designation VARCHAR(45), house VARCHAR(10) NOT NULL, is_student BIT(1) NOT NULL, grade TINYINT(1) UNSIGNED, section CHAR(1), program BIT(2), permissions BIT(2) DEFAULT 0, pass_hash CHAR(64), points SMALLINT(1), PRIMARY KEY (id));
+CREATE TABLE `PSGeventmanage`.`participant`( id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT, event SMALLINT(1) NOT NULL, participant SMALLINT(1) NOT NULL, PRIMARY KEY (id));
+INSERT INTO `PSGeventmanage`.`individual`(`id`,`name`,`designation`,`house`,`is_student`,`permissions`,`pass_hash`)VALUES(1,'admin','admin','admin',0,2,'8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918');
+INSERT INTO `PSGeventmanage`.`house`(`id`,`name`,`color`)VALUES(1,'Air','#29B6F6');
+INSERT INTO `PSGeventmanage`.`house`(`id`,`name`,`color`)VALUES(2,'Earth','#2E7D32');
+INSERT INTO `PSGeventmanage`.`house`(`id`,`name`,`color`)VALUES(3,'Fire','#E53935');
+INSERT INTO `PSGeventmanage`.`house`(`id`,`name`,`color`)VALUES(4,'Water','#0D47A1');

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="base" prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Class.HouseStandingsController">
+   <children>
+      <Label alignment="CENTER" prefHeight="64.0" prefWidth="700.0" style="-fx-background-color: #fdd835;" text="House Points Standings" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="606.0" layoutY="60.0" onAction="#populateHouseRank" text="Refresh" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="84.0">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ic_refresh_black_48dp_2x.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="podium3" prefHeight="480.0" prefWidth="240.0" style="-fx-background-color: #555555;" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="64.0" AnchorPane.topAnchor="504.0">
+         <children>
+            <Label fx:id="name3" alignment="CENTER" mouseTransparent="true" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="House" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="points3" alignment="CENTER" layoutY="40.0" mouseTransparent="true" prefHeight="40.0" prefWidth="110.0" text="000" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="podium1" prefHeight="880.0" prefWidth="240.0" style="-fx-background-color: #555555;" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="368.0" AnchorPane.topAnchor="104.0">
+         <children>
+            <Label fx:id="name1" alignment="CENTER" mouseTransparent="true" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="House" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="points1" alignment="CENTER" layoutY="40.0" mouseTransparent="true" prefHeight="40.0" prefWidth="110.0" text="000" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="podium2" prefHeight="680.0" prefWidth="240.0" style="-fx-background-color: #555555;" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="672.0" AnchorPane.topAnchor="304.0">
+         <children>
+            <Label fx:id="name2" alignment="CENTER" mouseTransparent="true" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="House" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="points2" alignment="CENTER" layoutY="40.0" mouseTransparent="true" prefHeight="40.0" prefWidth="110.0" text="000" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="podium4" prefHeight="280.0" prefWidth="240.0" style="-fx-background-color: #555555;" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="976.0" AnchorPane.topAnchor="704.0">
+         <children>
+            <Label fx:id="name4" alignment="CENTER" mouseTransparent="true" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="House" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="points4" alignment="CENTER" layoutY="40.0" mouseTransparent="true" prefHeight="40.0" prefWidth="110.0" text="000" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

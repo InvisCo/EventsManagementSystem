@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="base" prefHeight="560.0" prefWidth="500.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Class.HouseMembersController">
+   <children>
+      <Label fx:id="house" alignment="CENTER" prefHeight="50.0" prefWidth="500.0" style="-fx-background-color: #999999;" text="House" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="88.0" text="There are no members in this house.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXListView fx:id="listPerson" cellVerticalMargin="0.0" depthProperty="1" layoutY="50.0" prefHeight="510.0" prefWidth="500.0" verticalGap="10.0" />
+      <JFXButton focusTraversable="false" onAction="#buttonBack" prefHeight="49.0" prefWidth="70.0" text="Back" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ic_arrow_back_white_48dp_2x.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets right="4.0" />
+         </padding>
+      </JFXButton>
+      <JFXButton fx:id="buttonEditPerson" focusTraversable="false" layoutX="419.0" prefHeight="49.0" prefWidth="80.0" text="Person" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ic_mode_edit_white_48dp_2x.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets left="4.0" />
+         </padding>
+      </JFXButton>
+      <JFXButton fx:id="buttonAddPerson" focusTraversable="false" layoutX="339.0" prefHeight="49.0" prefWidth="80.0" text="Person" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ic_add_white_48dp_2x.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets left="4.0" />
+         </padding>
+      </JFXButton>
+      <JFXButton fx:id="buttonRefresh" buttonType="RAISED" layoutX="402.0" layoutY="56.0" ripplerFill="#bebebe" style="-fx-background-color: #FAFAFA;" text="Refresh">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ic_refresh_black_48dp_2x.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</Pane>

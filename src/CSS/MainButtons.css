@@ -1,0 +1,11 @@
+.button {
+    -fx-background-color: #40C4FF;
+}
+
+.button .jfx-rippler {
+    -fx-rippler-fill: #B3E5FC;
+}
+
+.button:focused {
+    -fx-background-color: #00B0FF;
+}

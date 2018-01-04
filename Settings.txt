@@ -1,0 +1,12 @@
+                  WELCOME TO PSG EVENTS MANAGEMENT SYSTEM
+***********************************************************************************************
+This file contains the required Settings for the application to run.
+Edit the values according to your system. There should be no space after '='.
+Make sure to change Application_First_Run to 'N' before running application.
+
+=========================SETTINGS==============================
+Application_First_Run [Y/N]=Y
+
+MySQL_Database_URL=
+MySQL_Database_Username=
+MySQL_Database_Password=

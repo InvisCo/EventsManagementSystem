@@ -1,0 +1,16 @@
+.button {
+    -fx-background-color: #b71c1c;
+    -fx-pref-height: 30;
+    -fx-pref-width: 100;
+    -fx-button-type: RAISED;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+}
+
+.button .jfx-rippler {
+    -fx-rippler-fill: #ff1744;
+}
+
+.button:focused {
+    -fx-background-color: #d32f2f;
+}

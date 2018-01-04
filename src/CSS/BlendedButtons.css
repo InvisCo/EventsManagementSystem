@@ -1,0 +1,10 @@
+.button {
+    -fx-max-height: 49;
+    -fx-min-height: 49;
+    -fx-pref-height: 49;
+    -fx-background-color: #FDD835;
+}
+
+.button .jfx-rippler {
+    -fx-rippler-fill: #FFF000;
+}

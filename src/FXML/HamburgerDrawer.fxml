@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="260.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Class.HamburgerDrawerController">
+   <children>
+      <Pane prefHeight="50.0" prefWidth="93.0" style="-fx-background-color: #03A9F4;" />
+      <ImageView fitHeight="300.0" fitWidth="180.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/PW_Symbol.jpg" />
+         </image>
+         <VBox.margin>
+            <Insets bottom="5.0" left="40.0" right="40.0" top="5.0" />
+         </VBox.margin>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="250.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/PSG_Text.jpg" />
+         </image>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </ImageView>
+      <JFXButton fx:id="buttonLogout" layoutX="580.0" prefHeight="40.0" prefWidth="258.0" ripplerFill="#0277bd" stylesheets="@../CSS/MenuButtons.css" text="Logout">
+         <VBox.margin>
+            <Insets left="1.0" top="10.0" />
+         </VBox.margin>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ic_account_circle_black_48dp_2x.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton disable="true" prefHeight="40.0" prefWidth="258.0" ripplerFill="#0277bd" stylesheets="@../CSS/MenuButtons.css" text="Reports">
+         <VBox.margin>
+            <Insets left="1.0" top="10.0" />
+         </VBox.margin>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ic_description_black_48dp_2x.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="buttonSettings" disable="false" prefHeight="40.0" prefWidth="258.0" ripplerFill="#0277bd" stylesheets="@../CSS/MenuButtons.css" text="Settings">
+         <VBox.margin>
+            <Insets left="1.0" top="10.0" />
+         </VBox.margin>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ic_settings_black_48dp_2x.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="buttonClose" prefHeight="40.0" prefWidth="258.0" ripplerFill="#0277bd" stylesheets="@../CSS/MenuButtons.css" text="Exit">
+         <VBox.margin>
+            <Insets left="1.0" top="10.0" />
+         </VBox.margin>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ic_power_settings_new_black_48dp_2x.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</VBox>

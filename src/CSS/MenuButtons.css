@@ -1,0 +1,9 @@
+.button {
+    -fx-background-color: #FFFFFF;
+    -fx-button-type: FLAT;
+}
+
+.button:hover {
+    -fx-background-color: #FaFaFa;
+    -fx-button-type: RAISED;
+}

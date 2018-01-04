@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mouseTransparent="true" prefHeight="72.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Class.CellPersonController">
+   <children>
+      <Label fx:id="name" focusTraversable="false" layoutX="14.0" layoutY="1.0" mouseTransparent="true" text="Name of Person" AnchorPane.leftAnchor="6.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label fx:id="grade" focusTraversable="false" layoutX="14.0" layoutY="43.0" mouseTransparent="true" text="Class, Section" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="6.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label fx:id="points" alignment="CENTER_RIGHT" focusTraversable="false" layoutX="484.0" layoutY="43.0" mouseTransparent="true" text="Points: 000" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+   </children>
+</AnchorPane>
